@@ -1,4 +1,0 @@
-reports.docx
-folderlist.jpg
-html page.jpg
-report page.jpg
