@@ -1,0 +1,31 @@
+body,
+html {
+    height: 100%;
+    margin: 0%;
+    background-image: url("back.jpg");
+}
+
+.container {
+    margin: 30px;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 60px;
+    border-radius: 25px;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    font-size: 30px;
+}
