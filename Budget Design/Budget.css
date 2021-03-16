@@ -1,0 +1,82 @@
+body {
+    background-image: url("background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.center {
+    text-align: center;
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -100px;
+    border-style: solid;
+    border-radius: 25px;
+    min-width: 400px;
+    min-height: 300px;
+    font-size: 25px;
+}
+
+.align {
+    text-align: left;
+}
+
+h1 {
+    text-align: Center;
+    text-indent: bold;
+    position: fixed;
+    top: 24%;
+    left: 47%;
+}
+
+.centered {
+    text-align: center;
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -100px;
+    border-style: solid;
+    border-radius: 25px;
+    min-width: 400px;
+    min-height: 300px;
+    font-size: 25px;
+}
+
+.btn {
+    float: left;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    left: 44%;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: center;
+    position: fixed;
+    top: 26%;
+    left: 47%;
+    font-size: 20px;
+}
+
+.ctr {
+    text-align: center;
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -100px;
+    border-style: solid;
+    border-radius: 25px;
+    min-width: 400px;
+    min-height: 300px;
+    font-size: 20px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Managers</title>
+    <script src="Managers.js"></script>
+    <link rel="stylesheet" href="Budget.css">
+
+</head>
+
+<body>
+    <h2>Program Managers</h2>
+    <table class="centered">
+        <tbody>
+            <h3>Add New Budget</h3>
+            <tr>
+                <th><label>Client Name</label>
+                    <input type="text" id="clientname" /><br/></th>
+            </tr>
+            <tr>
+                <th><label>Project Name</label>
+                    <input type="text" id="projectname" /></th>
+            </tr>
+            <tr>
+                <th><label>Budget</label>
+                    <input type="number" id="budget" /><br/> <br/></th>
+            </tr>
+
+            <tr class="btn">
+                <th><input type="button" value="Add" onclick="onFormSubmit()" /></th>
+                <th> <input type="button" value="Clear" onclick="resetData()" /></th>
+                <th> <a href="Budget.html">Back</a></th>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
