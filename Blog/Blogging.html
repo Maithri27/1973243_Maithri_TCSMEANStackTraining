@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script src="Blog.js"></script>
+    <style>
+        body {
+            background-image: url("back1.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .align {
+            align-items: center;
+        }
+        
+        .box {
+            background-color: cornsilk;
+            font-style: italic;
+            font-size: 40px;
+            border-bottom: 10px solid black 0.5;
+            text-align: center;
+            padding-inline: 20px;
+            padding-bottom: 20px;
+            border-radius: 20px;
+        }
+        
+        .font {
+            font-style: normal;
+            font-size: 20px;
+        }
+        
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            text-align: center;
+            color: black;
+        }
+        
+        .contents {
+            width: 30%;
+            text-align: right;
+            margin-right: 20px;
+            float: right;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1>"Create your Blog"</h1>
+    <div>
+        <table class="contents">
+            <tbody>
+                <tr class="col">
+                    <th> <a href="#" style="color:black">Add Blog</a></th>
+                    <th><a href="#" style="color:black">Home</a></th>
+                    <th><a href="#" style="color:black">About Us</a></th>
+                    <th> <a href="#" style="color:black">Contact Us</a></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br/>
+    <br/>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" id="title" class="form-control" placeholder="Title" aria-label="Username" aria-describedby="basic-addon1" />
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <div class="input-group">
+                        <span class="input-group-text">Article</span>
+                        <textarea name="article" id="article" class="form-control" aria-label="With textarea"></textarea><br><br></th>
+                </div>
+            </tr>
+            <tr>
+                <th> <label for="formFileLg" class="form-label"></label>
+                    <input type="file" id="img" name="img" class="form-control form-control-lg" id="formFileLg" accept="image/*"><br/> <br/></th>
+            </tr>
+
+            <tr>
+                <th><input type="button" value="Add Blog" class="btn btn-secondary" onclick="addBlog()" />
+                    <input type="button" value="Clear" class="btn btn-light" onclick="resetData()" /></th>
+            </tr>
+        </tbody>
+    </table>
+    <hr/>
+
+    <table id="blogsdiv">
+        <tbody class="align">
+
+        </tbody>
+
+    </table><br>
+</body>
+
+</html>
