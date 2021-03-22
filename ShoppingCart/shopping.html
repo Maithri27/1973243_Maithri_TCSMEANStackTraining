@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shopping.css">
+    <title>Shopping Cart </title>
+</head>
+
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>Shopping</h2>
+            <ul>
+                <li><a href="shopping.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="cart">
+                    <a href="cart.html" class="length" id="cart">Cart </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="image">
+            <img src="banana.jpg" alt="banana" width="360" height="245">
+            <h3>Banana</h3>
+            <h3>$1.60</h3>
+            <a class="add-cart cart1" id="cartSize" onclick="myCart('banana','1.60')" href="#">Add to Cart</a>
+        </div>
+        <div class="image">
+            <img src="blueberries.jpg" alt="blueberries" width="360" height="245">
+            <h3>blueberries</h3>
+            <h3>$3.50</h3>
+            <a class="add-cart cart2" id="cartSize" onclick="myCart('blueberries','3.50')" href="#">Add to Cart</a>
+        </div>
+        <div class="image">
+            <img src="strawberry.jpg" alt="strawberry" width="360" height="245">
+            <h3>Strawberry</h3>
+            <h3>$3.50</h3>
+            <a class="add-cart cart3" id="cartSize" onclick="myCart('Strawberry','3.50')" href="#">Add to Cart</a>
+        </div>
+        <div class="image">
+            <img src="kiwi.jpg" alt="kiwi" width="360" height="245">
+            <h3>Kiwi</h3>
+            <h3>$1.20</h3>
+            <a class="add-cart cart4" id="cartSize" onclick="myCart('kiwi','1.20')" href="#">Add to Cart</a>
+        </div>
+        <div class="image">
+            <img src="orange.jpg" alt="orange" width="360" height="245">
+            <h3>Orange</h3>
+            <h3>$4.00</h3>
+            <a class="add-cart cart5" id="cartSize" onclick="myCart('orange','4.00')" href="#">Add to Cart</a>
+        </div>
+        <div class="image">
+            <img src="grapes.png" alt="grapes" width="360" height="245">
+            <h3>Grapes</h3>
+            <h3>$3.60</h3>
+            <a class="add-cart cart6" id="cartSize" onclick="myCart('Grapes','3.60')" href="#">Add to Cart</a>
+        </div>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>
