@@ -44,7 +44,6 @@ function retrieveFromSession()
     cell1.style.textAlign = "right";
     cell1.innerHTML = "total Price:";
     let cell2 = newRow.insertCell(1);
-   
     cell2.innerHTML = String(total.toFixed(2));
 }
 
