@@ -1,0 +1,26 @@
+.signpage {
+    margin-top: 15%;
+    background: rgba(54, 53, 53, 0.3);
+    width: 40%;
+    align-items: center;
+    margin-left: 28%;
+    min-height: 50%;
+    border-radius: 20px;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+    height: 50%;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+h3 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
