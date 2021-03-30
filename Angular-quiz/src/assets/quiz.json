@@ -1,0 +1,71 @@
+[{
+        "question": "Which of the following are astronauts not permitted to eat before going into space?",
+        "option1": "Peanut butter",
+        "option2": "Seafood",
+        "option3": "beans",
+        "Answer": 3
+    },
+    {
+        "question": "How can you make rubber bands last longer?",
+        "option1": "Dip them in cooking oil overnight",
+        "option2": "Refridgerate them",
+        "option3": "Store them in a warm place",
+        "Answer": 2
+    },
+    {
+        "question": "By law, what is banned in Japanese restaurants?",
+        "option1": " Loud talking",
+        "option2": " Tipping",
+        "option3": " Taking photographs",
+        "Answer": 2
+    },
+    {
+        "question": " What is the name of Nemo's dad in Finding Nemo?",
+        "option1": "Merlin",
+        "option2": " Marlin",
+        "option3": " Martin",
+        "Answer": 2
+    },
+    {
+        "question": "How many bones are there in the human body??",
+        "option1": "184 ",
+        "option2": " 206",
+        "option3": " 312",
+        "Answer": 2
+    },
+    {
+        "question": "A snail can sleep for how many years?",
+        "option1": " One",
+        "option2": " Two",
+        "option3": " Three",
+        "Answer": 3
+    },
+    {
+        "question": "How many players are there on an Olympic curling team?",
+        "option1": " four",
+        "option2": " Five",
+        "option3": " six",
+        "Answer": 1
+    },
+    {
+        "question": " What's the name of the giant snow monster that guards Elsa's palace in the film Frozen?",
+        "option1": " Marshmallow",
+        "option2": " Lollipop",
+        "option3": " Fudge",
+        "Answer": 1
+    },
+    {
+        "question": " What name is given to a badger’s home?",
+        "option1": "  Burrow",
+        "option2": " Sett",
+        "option3": " Den",
+        "Answer": 2
+    },
+    {
+        "question": " A skulk is the collective noun for which group of animals?",
+        "option1": " Foxes",
+        "option2": "  Mice",
+        "option3": " Otters",
+        "Answer": 1
+    }
+]

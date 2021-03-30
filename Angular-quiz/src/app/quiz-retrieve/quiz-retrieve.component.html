@@ -1,0 +1,26 @@
+<div>
+    <h2>"General Knowledge Quiz"</h2>
+    <div>
+        <fieldset class="card shadow p-3 mb-3 bg-body" *ngFor="let q of questions">
+            <p class="ques">{{q.question}}</p>
+
+            <div id="{{q.question}}1" style="font-size: 18px;">
+                <input type="radio" name="{{q.question}}" id="option1" required (click)="onSelect(q.question,1);" />
+                <label for="option1">{{q.option1}}</label>
+            </div>
+            <div id="{{q.question}}2" style="font-size: 18px;">
+                <input type="radio" name="{{q.question}}" id="option2" required (click)="onSelect(q.question,2);">
+                <label for="option2">{{q.option2}}</label>
+            </div>
+            <div id="{{q.question}}3" style="font-size: 18px;">
+                <input type="radio" name="{{q.question}}" id="option3" required (click)="onSelect(q.question,3);">
+                <label for="option3">{{q.option3}}</label>
+            </div>
+        </fieldset><br/>
+    </div>
+    <br>
+    <button mat-raised-button color="primary" class="button" (click)="onSubmit()" [disabled]="click">Primary Button</button>
+    <div *ngIf="result" class="result">
+        <p [style.color]="Color()">Quiz Score: {{count}}/10 </p>
+    </div>
+</div>

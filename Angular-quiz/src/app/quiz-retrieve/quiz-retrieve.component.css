@@ -1,0 +1,40 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+fieldset {
+    margin-right: 25%;
+    width: 50%;
+    margin-left: 25%;
+    height: 130px;
+    border-radius: 20px;
+    border-style: double;
+    background: rgba(54, 53, 53, 0.2);
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.result {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ques {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.button {
+    margin-left: 45%;
+}
+
+input[type="radio"] {
+    height: 20px;
+}
