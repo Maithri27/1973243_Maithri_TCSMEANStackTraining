@@ -1,0 +1,32 @@
+<div>
+    <h2>"To-Do List"</h2>
+    <form #listRef="ngForm" (ngSubmit)="storeUser(listRef.value)">
+        <mat-form-field>
+            <mat-label>id</mat-label>
+            <input matInput type="text" name="id" ngModel />
+        </mat-form-field>
+        &nbsp;
+        <br/>
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type="text" name="name" ngModel />
+        </mat-form-field>
+        &nbsp;
+        <br/>
+        <mat-form-field>
+            <mat-label>Task</mat-label>
+            <input matInput type="text" name="task" ngModel />
+        </mat-form-field>
+        &nbsp;
+        <br/>
+        <mat-form-field>
+            <mat-label>Deadline</mat-label>
+            <input matInput type="datetime-local" id="datetime" name="datetime" ngModel />
+        </mat-form-field>
+        <br/>
+        <button mat-stroked-button color="primary">store</button>
+    </form>
+
+
+
+</div>
