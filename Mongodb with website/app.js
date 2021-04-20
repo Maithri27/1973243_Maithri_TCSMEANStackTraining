@@ -1,6 +1,6 @@
 let app = require("express")();
 let bodyParser = require("body-parser");
-let port = 9999;
+let port = 9090;
 app.use(bodyParser.urlencoded({ extended: true }));
 let mongoClient = require("mongodb").MongoClient;
 let url = "mongodb://localhost:27017"
@@ -33,7 +33,7 @@ app.post("/addCourseDetails", (req, res) => {
             let db = client.db("meanstack");
             db.collection("courses").insertOne(data, (err2, result) => {
                 if (!err2) {
-                    console.log("Course Added Successfully " + result.insertedCount);
+                    console.log("Course Added Successfully ");
                 } else {
                     console.log(err2.message);
                 }
@@ -113,28 +113,22 @@ app.get("/allCourses", (req, res) => {
 });
 
 app.get("/allCoursesDetails", async(req, res) => {
-    mongoClient.connect(url, { useUnifiedTopology: true }, (err1, client) => {
+    mongoClient.connect(url, { useUnifiedTopology: true }, async(err1, client) => {
         if (!err1) {
             let db = client.db("meanstack");
             let cursor = db.collection("courses").find();
-            cursor.each((err2, doc) => {
-                if (doc != null) {
-                    console.log(cursor)
-                    let course = [];
-                    course.push(doc);
-                    //console.log(course)
-                    //  var Courses = JSON.stringify(course);
-                    //  var courseData = JSON.parse(Courses);
-                    //  console.log(courseData)
-                    //res.json(course)
-
-
-                }
-                client.close();
-            })
-
+            const results = await cursor.toArray();
+            let courses = [];
+            if (results.length > 0) {
+                results.forEach((result, i) => {
+                    courses.push(result)
+                });
+            } else {
+                console.log(`No customers found`);
+            }
+            res.json(courses)
         }
     })
 
 })
-app.listen(9999, () => console.log("running.."));
+app.listen(9090, () => console.log("running.."));
